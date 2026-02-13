@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="国外 AI 模型路线观察：前沿能力、开发者生态、工程落地方法。"
+    />
+    <title>国外 AI 模型：从前沿能力到工程落地</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="reading-progress" data-reading-progress></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">青玉白露（whitedew） · AI Blog</a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="../index.html#posts">文章</a>
+          <a href="../index.html#about">关于我</a>
+          <a href="../index.html#contact">联系</a>
+          <a
+            class="external-link"
+            href="https://blog.aistar.cool"
+            target="_blank"
+            rel="noopener"
+            >博客</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="post-page">
+      <article class="post-layout">
+        <a class="back-link" href="../index.html#posts">← 返回文章列表</a>
+        <p class="tag">国外模型</p>
+        <h1>国外 AI 模型：从前沿能力到工程落地</h1>
+        <p class="post-meta">发布时间：2026-02-13 · 阅读时长：8 分钟</p>
+
+        <div class="post-content">
+          <p>
+            如果把国外模型生态看成一条价值链，大致可以分为三段：前沿研究推动能力上限、平台产品放大开发效率、应用公司把能力变成收入。理解这三段关系，有助于你判断“哪些能力值得追、哪些能力要晚一点跟”。
+          </p>
+
+          <h2>1. 为什么国外模型仍然影响全球路线</h2>
+          <p>
+            一方面，国外头部模型在推理、代码、工具调用和多模态协同上持续突破，往往率先定义下一代交互范式。另一方面，很多开源权重、评测框架和开发工具也由海外社区先行，形成了较强的工程外溢效应。
+          </p>
+          <p>
+            这并不意味着照搬即可。真正有效的方法是：关注其能力边界和工程模式，再结合本地合规、成本和业务流程做二次设计。
+          </p>
+
+          <h2>2. 主流能力竞争已经从“会答题”升级为“会执行”</h2>
+          <p>
+            早期大家比较模型谁回答得更像人。现在更关键的是模型能否完成复杂任务：理解长上下文、调用多个工具、根据反馈自我修正，并在多轮中保持状态一致。换句话说，竞争焦点从“单次输出质量”变成“端到端任务成功率”。
+          </p>
+          <p>
+            在工程上，这意味着你要重点评估：函数调用准确率、工具执行失败后的恢复能力、跨步骤记忆稳定性、以及异常输入时的安全策略。
+          </p>
+
+          <h2>3. 选用国外模型时的现实约束</h2>
+          <ul>
+            <li>网络与延迟：跨区域调用会影响实时体验，需配置缓存和异步队列。</li>
+            <li>数据边界：涉及敏感业务时，必须做脱敏、最小化上传和审计追踪。</li>
+            <li>成本不确定性：模型升级可能改变计费结构，要准备弹性预算。</li>
+            <li>供应商策略变化：接口、速率限制、模型下线策略都可能调整。</li>
+          </ul>
+
+          <h2>4. 一套可执行的落地框架</h2>
+          <ol>
+            <li>先用通用模型做基线，快速建立可评估的 MVP。</li>
+            <li>把提示词、工具调用、检索策略分层，避免耦合在同一段逻辑。</li>
+            <li>引入自动评测集，持续对比新旧模型在业务指标上的增益。</li>
+            <li>准备多模型路由策略，在成本、速度和质量之间动态平衡。</li>
+          </ol>
+
+          <h2>5. 小结</h2>
+          <p>
+            国外模型最大的价值，不只是“模型本身”，而是它们推动的一整套工程实践：快速迭代、自动评测、工具化协作和产品化闭环。把这套方法吸收过来，你就能在任何模型生态变化下保持主动。
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> 青玉白露（whitedew）. All rights reserved.</p>
+        <p>
+          备案号：<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener"
+            >蜀ICP备2023006766号-3</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

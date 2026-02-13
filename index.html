@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="青玉白露（whitedew）的个人博客，记录国内外 AI 大模型观察与工程实践。"
+    />
+    <title>青玉白露（whitedew） · AI 个人博客</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">青玉白露（whitedew） · AI Blog</a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="#posts">文章</a>
+          <a href="#about">关于我</a>
+          <a href="#contact">联系</a>
+          <a
+            class="external-link"
+            href="https://blog.aistar.cool"
+            target="_blank"
+            rel="noopener"
+            >博客</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">PERSONAL BLOG</p>
+          <h1>把复杂的 AI 模型，讲清楚、用起来、落到业务里。</h1>
+          <p>
+            这里主要分享三类内容：国内大模型生态、国外大模型进展、以及
+            AI 模型的基础方法与实战路线。
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#posts">查看文章</a>
+            <a
+              class="btn secondary"
+              href="https://blog.aistar.cool"
+              target="_blank"
+              rel="noopener"
+              >访问 Aistar 博客</a
+            >
+          </div>
+        </div>
+        <aside class="hero-card">
+          <h2>博客定位</h2>
+          <ul>
+            <li>面向非算法背景的产品和工程同学</li>
+            <li>强调可执行的选型与落地建议</li>
+            <li>关注合规、成本和长期维护</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="posts" class="container section reveal">
+        <div class="section-head">
+          <h2>最新文章</h2>
+          <div class="filters" role="tablist" aria-label="文章筛选">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="china">国内模型</button>
+            <button class="filter-btn" data-filter="global">国外模型</button>
+            <button class="filter-btn" data-filter="basic">模型基础</button>
+          </div>
+        </div>
+        <p class="post-order-tip">按发布时间从早到晚排序，最新文章在最下面。</p>
+
+        <div class="post-grid">
+          <article class="post-card" data-category="basic">
+            <p class="tag">模型基础</p>
+            <h3>AI 模型基础：从 Transformer 到 Agent 的一条线</h3>
+            <p>
+              一篇讲清大模型关键概念和工程闭环，适合从 0 到 1 搭建 AI 应用认知体系。
+            </p>
+            <a href="posts/ai-model-roadmap.html">阅读全文</a>
+          </article>
+
+          <article class="post-card" data-category="china">
+            <p class="tag">国内模型</p>
+            <h3>2026 视角下的国内 AI 大模型生态观察</h3>
+            <p>
+              从通用模型到行业落地，梳理国内大模型的能力结构、应用趋势和企业选型要点。
+            </p>
+            <a href="posts/china-models-2026.html">阅读全文</a>
+          </article>
+
+          <article class="post-card" data-category="global">
+            <p class="tag">国外模型</p>
+            <h3>国外 AI 模型：从前沿能力到工程落地</h3>
+            <p>
+              对比国外主流模型路线，重点看推理能力、工具调用、多模态和开发者生态。
+            </p>
+            <a href="posts/global-models-engineering.html">阅读全文</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="container section reveal">
+        <h2>关于我</h2>
+        <p>
+          我是青玉白露（whitedew），一名关注 AI 产品化与工程化的开发者，长期记录模型选型、RAG、Agent
+          和企业落地实践。
+        </p>
+      </section>
+
+      <section id="contact" class="container section reveal">
+        <h2>联系</h2>
+        <div class="contact-card">
+          <p>微信：whitedewstory</p>
+          <p>城市：成都</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> 青玉白露（whitedew）. All rights reserved.</p>
+        <p>
+          备案号：<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener"
+            >蜀ICP备2023006766号-3</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
