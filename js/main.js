@@ -3,24 +3,6 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
-const filterButtons = document.querySelectorAll(".filter-btn");
-const postCards = document.querySelectorAll(".post-card");
-
-// 首页文章分类筛选
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    filterButtons.forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
-
-    const filter = button.dataset.filter;
-    postCards.forEach((card) => {
-      const category = card.dataset.category;
-      const visible = filter === "all" || filter === category;
-      card.style.display = visible ? "flex" : "none";
-    });
-  });
-});
-
 // 页面滚动时显示区块动画
 const revealNodes = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window && revealNodes.length > 0) {
