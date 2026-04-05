@@ -19,7 +19,9 @@ assert_contains('class="intro-shell reveal"')
 assert_contains('class="meta-grid reveal"')
 assert_contains('class="entry-list reveal"')
 assert_contains('class="avatar-photo"')
-assert_contains('src="public/icon.jpg"')
+assert_contains('src="public/icon.jpg?v=20260405-1"')
+assert_contains('src="https://umami.aistar.cool/script.js"')
+assert_contains('data-website-id="8f4c108a-d47c-4449-aa25-66abdbd8303e"')
 assert_contains("小红书")
 assert HTML.count('class="entry-card"') >= 2, "expected at least 2 entry cards"
 
